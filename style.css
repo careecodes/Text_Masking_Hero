@@ -6,6 +6,10 @@ body {
 }
 
 .hero-text {
+    background: url('hero-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-clip: text;
+    color: transparent;
     font-size: 10rem;
     font-weight: bold;
     letter-spacing: 5px;
