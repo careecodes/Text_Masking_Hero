@@ -11,17 +11,13 @@ $(document).ready(function(){
     $(document).mousemove(function(e){
         mouseX = e.pageX;
         mouseY = e.pageY;
-
-
         console.log(mouseX + ',' + mouseY);
-        // traX = .01 * mouseX;
-        // traY = .01 * mouseY;
-        traX = -50 + mouseX;
-        traY= .001 + mouseY;
-        //console.log(traX + ',' + traY);
-        bgX= traX/ww;
-        bgY=traY/wh;
-        //console.log(bgX + ',' + bgY);
-        $(".hero-text").css({"background-position": traX + "%" + traY + "%"});
+        traX = ((25 * mouseX) / 570) + 40;
+        traY = ((20 * mouseY) / 570) + 50;
+        console.log(traX + ',' + traY);
+        $(".hero-text").css({
+            "background-position": traX + "%" + traY + "%",
+            "background-size": "110% 110%"
+        });
     });
   });
