@@ -1,4 +1,13 @@
 body {
     background: url('hero-bg.jpg') no-repeat center center fixed;
     background-size: cover;
+    color: #FFFFFF;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.hero-text {
+    font-size: 10rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
 }
