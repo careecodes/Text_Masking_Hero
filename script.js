@@ -19,8 +19,9 @@ $(document).ready(function(){
         });
     });
 
-    $(document).mouseout(function(){
-        $(".hero-text").css({
+    $('body').mouseleave(function(){
+          $(".hero-text").css({
+            "background-position": "top left",
             "background-position": "center center",
             "background-size": "cover"
         });

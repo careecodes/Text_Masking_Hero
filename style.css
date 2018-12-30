@@ -1,8 +1,14 @@
+* {
+    /* I feel like this is probably bad practice but unsure why */
+    box-sizing: border-box;
+}
+
 body {
     background: url('hero-bg.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #FFFFFF;
     font-family: 'Helvetica', sans-serif;
+    font-size: 15px;
 }
 
 
@@ -25,26 +31,53 @@ main {
     letter-spacing: 20px;
     text-align: center;
     width: 100%;
+    transition: background-position .25s cubic-bezier(0,.65,.28,.99);
+    transition-delay: .1s;
 }
 
 .main-nav, .main-footer {
     position: absolute;
     width: 100%;
+    padding: 25px;
 }
 
 .main-nav {
     top: 0;
-    /*padding: 25px;*/
     display: flex;
     justify-content: space-between;
 }
 
 .nav-logo {
-    height: 50px;
+    height: 40px;
 }
 
 .main-footer {
     bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, .85);;
+    text-decoration: none;
+}
+
+.nav-link {
+    border-bottom: 1px solid rgba(255, 255, 255, .65);
+    color: rgba(255, 255, 255, .85);;
+    display: inline-block;
+    text-decoration: none;
+    min-width: 225px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+}
+
+.nav-link:not(:last-child) {
+    margin-right: 20px;
+}
+
+.nav-link:hover {
+    cursor: pointer;
 }
 
 
